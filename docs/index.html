@@ -22,10 +22,6 @@
     <meta property="og:url" content="https://your-domain.com/" />
     <meta property="og:site_name" content="(주) 에스텍피엠씨" />
     <meta property="og:locale" content="ko_KR" />
-    <meta
-      property="og:image"
-      content="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=2000&auto=format&fit=crop"
-    />
     <meta property="og:image:alt" content="도시 전경의 현대적 빌딩 이미지" />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -50,35 +46,6 @@
       as="image"
       href="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=2000&auto=format&fit=crop"
     />
-
-    <!-- Verification placeholders (필요 시 실제 값으로 교체) -->
-    <!-- <meta name="google-site-verification" content="..."> -->
-    <!-- <meta name="naver-site-verification" content="..."> -->
-
-    <!-- 조직/서비스 구조화 데이터 -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "(주) 에스텍피엠씨",
-        "url": "https://your-domain.com/",
-        "email": "mailto:hello@stpmc.co.kr",
-        "foundingDate": "2002",
-        "areaServed": "KR",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "서울특별시",
-          "addressCountry": "KR"
-        },
-        "knowsAbout": [
-          "부동산 개발",
-          "임대관리",
-          "자산관리",
-          "빌딩 종합관리",
-          "생활형 숙박시설 운영"
-        ]
-      }
-    </script>
 
     <script>
       const els = document.querySelectorAll(".reveal-card");
@@ -108,7 +75,7 @@
           var prefersDark =
             window.matchMedia &&
             window.matchMedia("(prefers-color-scheme: dark)").matches;
-          var isDark = saved ? saved === "dark" : prefersDark;
+          var isDark = saved ? saved === "dark" : false;
           if (isDark) document.documentElement.classList.add("dark");
         } catch (e) {
           /* ignore */

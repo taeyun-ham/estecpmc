@@ -108,7 +108,7 @@
           var prefersDark =
             window.matchMedia &&
             window.matchMedia("(prefers-color-scheme: dark)").matches;
-          var isDark = saved ? saved === "dark" : prefersDark;
+          var isDark = saved ? saved === "dark" : false;
           if (isDark) document.documentElement.classList.add("dark");
         } catch (e) {
           /* ignore */
