@@ -2143,7 +2143,7 @@
       setTheme(
         savedTheme
           ? savedTheme === "dark"
-          : window.matchMedia("(prefers-color-scheme: dark)").matches
+          : false
       );
       [themeToggle, themeToggleMobile].forEach(
         (btn) =>
