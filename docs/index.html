@@ -1,0 +1,2190 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      (주) 에스텍피엠씨 — 부동산 종합관리 · 임대관리 · 자산관리 컨설팅
+    </title>
+    <!-- SEO essentials -->
+    <link rel="canonical" href="https://your-domain.com/" />
+    <link rel="alternate" href="https://your-domain.com/" hreflang="ko" />
+    <link
+      rel="alternate"
+      href="https://your-domain.com/"
+      hreflang="x-default"
+    />
+    <meta
+      name="robots"
+      content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+    />
+
+    <meta property="og:url" content="https://your-domain.com/" />
+    <meta property="og:site_name" content="(주) 에스텍피엠씨" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta
+      property="og:image"
+      content="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=2000&auto=format&fit=crop"
+    />
+    <meta property="og:image:alt" content="도시 전경의 현대적 빌딩 이미지" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="(주) 에스텍피엠씨 — 부동산 종합관리 · 임대관리 · 자산관리 컨설팅"
+    />
+    <meta
+      name="twitter:description"
+      content="부동산 개발·시행, 주택임대·위탁관리, 빌딩 종합관리까지 — 창조와 도전정신으로 미래가치를 실현하는 컨설팅 전문기업."
+    />
+    <meta
+      name="twitter:image"
+      content="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=2000&auto=format&fit=crop"
+    />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="preload"
+      as="image"
+      href="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=2000&auto=format&fit=crop"
+    />
+
+    <!-- Verification placeholders (필요 시 실제 값으로 교체) -->
+    <!-- <meta name="google-site-verification" content="..."> -->
+    <!-- <meta name="naver-site-verification" content="..."> -->
+
+    <!-- 조직/서비스 구조화 데이터 -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "(주) 에스텍피엠씨",
+        "url": "https://your-domain.com/",
+        "email": "mailto:hello@stpmc.co.kr",
+        "foundingDate": "2002",
+        "areaServed": "KR",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "서울특별시",
+          "addressCountry": "KR"
+        },
+        "knowsAbout": [
+          "부동산 개발",
+          "임대관리",
+          "자산관리",
+          "빌딩 종합관리",
+          "생활형 숙박시설 운영"
+        ]
+      }
+    </script>
+
+    <script>
+      const els = document.querySelectorAll(".reveal-card");
+
+      const io = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.dataset.visible = "true";
+              obs.unobserve(entry.target); // 한 번만 애니메이션
+            }
+          });
+        },
+        {
+          root: null,
+          threshold: 0.15, // 15% 보이면 트리거
+        }
+      );
+
+      els.forEach((el) => io.observe(el));
+    </script>
+
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("theme");
+          var prefersDark =
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches;
+          var isDark = saved ? saved === "dark" : prefersDark;
+          if (isDark) document.documentElement.classList.add("dark");
+        } catch (e) {
+          /* ignore */
+        }
+      })();
+    </script>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Pretendard Variable (Dynamic Subset) -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: "#eef7ff",
+                100: "#d8ecff",
+                200: "#b7dbff",
+                300: "#84c3ff",
+                400: "#46a3ff",
+                500: "#1f87ff",
+                600: "#0b6ff2",
+                700: "#0959c4",
+                800: "#0b4aa0",
+                900: "#0d3e82",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      /* Pretendard as default UI font */
+      body { font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif; }
+      @keyframes fadeUp { from {opacity:0; transform: translateY(8px)} to {opacity:1; transform: translateY(0)} } to {opacity:1; transform: translateY(0)} }
+      .fade-up { animation: fadeUp .7s ease-out both; }
+    </style>
+  </head>
+  <body
+    class="bg-white text-gray-900 antialiased dark:bg-gray-950 dark:text-gray-100"
+  >
+    <!-- Skip link -->
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:rounded-lg focus:bg-gray-900 focus:text-white focus:px-3 focus:py-2"
+      >본문으로 건너뛰기</a
+    >
+
+    <!-- 상단 배경 장식 -->
+    <div aria-hidden="true" class="fixed inset-0 -z-10">
+      <div
+        class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl"
+      >
+        <div
+          class="relative left-[max(60%,40rem)] aspect-[1155/678] w-[42rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-brand-400 to-emerald-400 opacity-30 dark:opacity-20"
+        ></div>
+      </div>
+    </div>
+
+    <!-- 헤더: sticky + 스크롤 시 유리효과/그림자 -->
+    <header id="siteHeader" class="sticky top-0 z-50 transition-all">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between gap-3">
+          <!-- 로고/브랜드 -->
+          <a
+            href="#"
+            class="flex items-center gap-2"
+            aria-label="에스텍피엠씨 홈으로"
+          >
+            <img
+    src="./assets/logo.png"
+    alt="(주) 에스텍피엠씨 로고"
+    class="h-9 w-9 rounded-xl object-contain"
+    width="36" height="36"
+    loading="eager" decoding="async" fetchpriority="high"
+  />
+            <span class="text-base font-semibold tracking-tight"
+              >(주) 에스텍피엠씨</span
+            >
+          </a>
+
+          <!-- 데스크톱 내비 -->
+          <nav
+            aria-label="주요 메뉴"
+            class="hidden md:flex md:items-center md:gap-7"
+          >
+            <a
+              href="#about"
+              class="text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+              >회사소개</a
+            >
+            <a
+              href="#operations"
+              class="text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+              >업무운영</a
+            >
+            <a
+              href="#partners"
+              class="text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+              >협력업체</a
+            >
+            <a
+              href="#areas"
+              class="text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+              >사업영역</a
+            >
+            <a
+              href="#projects"
+              class="text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+              >사업실적</a
+            >
+            <a
+              href="#total-ops"
+              class="text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
+              >종합관리</a
+            >
+          </nav>
+
+          <!-- 액션들 -->
+          <div class="hidden md:flex items-center gap-3">
+            <button
+              id="themeToggle"
+              type="button"
+              class="rounded-xl border border-gray-300/70 px-3 py-2 text-sm backdrop-blur hover:bg-gray-100 dark:border-white/15 dark:hover:bg-white/5"
+              aria-pressed="false"
+              aria-label="다크모드 전환"
+            >
+              다크모드
+            </button>
+            <a
+              href="https://forms.gle/VT7CgsATMkjjdo3c8" target="_blank" rel="noopener"
+              class="rounded-xl bg-gradient-to-r from-brand-600 to-emerald-600 px-4 py-2 text-sm font-semibold text-white shadow hover:opacity-95"
+              >문의하기</a
+            >
+          </div>
+
+          <!-- 모바일 메뉴 버튼 -->
+          <button
+            id="mobileBtn"
+            class="md:hidden inline-flex h-9 w-9 items-center justify-center rounded-lg border border-gray-300/70 dark:border-white/15"
+            aria-controls="mobileMenu"
+            aria-expanded="false"
+            aria-label="모바일 메뉴 열기"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- 모바일 드로어 -->
+      <div
+        id="mobileMenu"
+        class="md:hidden hidden border-t border-gray-200/80 bg-white/90 backdrop-blur dark:border-white/10 dark:bg-gray-950/80"
+        role="dialog"
+        aria-label="모바일 내비게이션"
+      >
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 space-y-2">
+          <a
+            href="#about"
+            class="block rounded-lg px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-white/5"
+            >회사소개</a
+          >
+          <a
+            href="#operations"
+            class="block rounded-lg px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-white/5"
+            >업무운영</a
+          >
+          <a
+            href="#partners"
+            class="block rounded-lg px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-white/5"
+            >협력업체</a
+          >
+          <a
+            href="#areas"
+            class="block rounded-lg px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-white/5"
+            >사업영역</a
+          >
+          <a
+            href="#total-ops"
+            class="block rounded-lg px-3 py-2 text-sm hover:bg-gray-100 dark:hover:bg-white/5"
+            >종합관리</a
+          >
+          <div class="pt-2 flex gap-2">
+            <button
+              id="themeToggleMobile"
+              class="flex-1 rounded-xl border border-gray-300/70 px-4 py-2 text-sm backdrop-blur hover:bg-gray-100 text-center dark:border-white/15 dark:hover:bg-white/5"
+            >
+              다크모드
+            </button>
+            <a
+              href="https://forms.gle/VT7CgsATMkjjdo3c8" target="_blank" rel="noopener"
+              class="flex-1 rounded-xl bg-gradient-to-r from-brand-600 to-emerald-600 px-4 py-2 text-sm font-semibold text-white text-center shadow hover:opacity-95"
+              >상담하기</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- 히어로: 건물 이미지 배경 (높이 고정, 가로는 반응형) -->
+      <!-- 아래 URL을 실제 빌딩 이미지로 교체하세요 -->
+      <section id="hero" class="relative h-[520px] w-full">
+        <div
+          class="absolute inset-0 bg-center bg-cover"
+          style="
+            background-image: url('./assets/0.webp');
+          "
+        ></div>
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/35 to-black/60"
+        ></div>
+        <div
+          class="relative z-10 mx-auto flex h-full max-w-7xl items-center px-4 sm:px-6 lg:px-8"
+        >
+          <div class="fade-up max-w-1xl text-white">
+            <p
+              class="mb-3 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-3 py-1 text-xs font-medium backdrop-blur"
+            >
+              창조와 도전정신으로 미래를 선도하는 기업
+            </p>
+            <h1
+              class="text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl"
+            >
+              부동산 종합관리 · 임대관리 · 자산관리의
+              <span
+                class="bg-gradient-to-r from-brand-200 to-emerald-200 bg-clip-text text-transparent"
+                >신뢰 파트너</span
+              >
+            </h1>
+            <p class="mt-4 text-lg text-white/90">
+              2002년부터 축적된 노하우로 개발·임대·운영 전 과정을 설계하고
+              실행합니다. 고객 니즈에 맞는 체계적 시스템으로 최고의 가치를
+              실현합니다.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center gap-3">
+              <a
+                href="https://forms.gle/VT7CgsATMkjjdo3c8" target="_blank" rel="noopener"
+                class="rounded-xl bg-white px-5 py-3 text-sm font-semibold text-gray-900 shadow hover:bg-white/90"
+                >상담 요청</a
+              >
+              <a
+                href="#about"
+                class="rounded-xl border border-white/40 px-5 py-3 text-sm font-semibold text-white/95 hover:bg-white/10"
+                >회사소개 보기</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 회사소개 -->
+      <section id="about" class="py-20 sm:py-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+              최상의 시스템 실현을 위한 컨설팅 전문기업
+            </h2>
+            <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+              (주)에스텍피엠씨는 새로운 마케팅 방안과 철저한 사전
+              커뮤니케이션으로 미래가치를 창조하고 현실적이면서도 최상의
+              서비스를 제공하는 것을 목표로 합니다.
+            </p>
+            <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+              2002년 중개·관리사무소 설립이후 오랜경험을 바탕으로 고객만족을
+              실현하고 지속 성장을 이어가고 있습니다.
+            </p>
+          </div>
+
+          <div class="mt-12 grid gap-6 lg:grid-cols-3">
+            <div>
+              <div
+                class="h-96 border border-gray-200/80 bg-white/70 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5 rounded-2xl overflow-hidden"
+              >
+                <!-- 상단 이미지 (2/3 영역 차지) -->
+                <img
+                  src="./assets/1.webp"
+                  alt="사람 이미지"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <!-- 하단 텍스트 (1/3 영역 차지) -->
+              <div class="h-1/3 p-6">
+                <h3 class="text-2xl font-semibold">핵심 가치</h3>
+                <ul
+                  class="mt-3 space-y-2 text-lg text-gray-700 dark:text-gray-300"
+                >
+                  <li>끊임없는 변화와 혁신</li>
+                  <li>긍정적 사고와 도전정신</li>
+                  <li>현실적이면서 최상의 서비스</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div
+                class="h-96 border border-gray-200/80 bg-white/70 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5 rounded-2xl overflow-hidden"
+              >
+                <!-- 상단 이미지 (2/3 영역 차지) -->
+                <img
+                  src="./assets/2.webp"
+                  alt="사람 이미지"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="h-1/3 p-6">
+                <h3 class="text-2xl font-semibold">주요 역량</h3>
+                <ul
+                  class="mt-3 space-y-2 text-lg text-gray-700 dark:text-gray-300"
+                >
+                  <li>부동산 개발 및 시행</li>
+                  <li>주택임대 및 위탁관리</li>
+                  <li>빌딩 종합관리 및 임대</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div
+                class="h-96 border border-gray-200/80 bg-white/70 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5 rounded-2xl overflow-hidden"
+              >
+                <!-- 상단 이미지 (2/3 영역 차지) -->
+                <img
+                  src="./assets/3.webp"
+                  alt="사람 이미지"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="h-1/3 p-6">
+                <h3 class="text-2xl font-semibold">고객 맞춤 설계</h3>
+                <ul
+                  class="mt-3 space-y-2 text-lg text-gray-700 dark:text-gray-300"
+                >
+                  <li>네트워크 관리 설계</li>
+                  <li>체계적 시스템</li>
+                  <li>입주 종합관리 · 사후분석</li>
+                  <li>임대 종합 설계관리</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 조직도 
+          <div class="mt-16">
+            <h3 class="text-2xl font-bold tracking-tight">조직도</h3>
+            <div class="mt-6 grid gap-6 lg:grid-cols-2">
+              <div
+                class="border border-gray-200/80 bg-white/70 p-6 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5"
+              >
+                <h4 class="text-lg font-semibold">CEO</h4>
+                <ul
+                  class="mt-3 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300"
+                >
+                  <li>총괄/관리</li>
+                  <li>경영지원부 — 회계부, 총괄부, 현장관리부, 경리부</li>
+                  <li>시설관리부 — 시설관리팀, 시설유지팀, 시설보수팀</li>
+                  <li>임대관리사업부 — 관리1·2·3팀</li>
+                  <li>분양사업부 — 영업1·2·3팀</li>
+                </ul>
+              </div>
+              <div
+                class="border border-gray-200/80 bg-white/70 p-6 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5"
+              >
+                <h4 class="text-lg font-semibold">구성원 모두가 최고입니다</h4>
+                <p class="mt-3 text-sm text-gray-700 dark:text-gray-300">
+                  (주) 에스텍피엠씨는 성실과 전문성을 바탕으로 한 길을
+                  걸어왔습니다. 축적된 노하우로 고객의 성공을 함께 만들어갑니다.
+                </p>
+              </div>
+            </div>
+          </div>-->
+        </div>
+      </section>
+      <!-- 업무운영 -->
+      <section id="operations" class="relative py-20 sm:py-24">
+        <!-- 섹션 배경 레이어 (라이트/다크 대응) -->
+        <div aria-hidden="true" class="absolute inset-0 -z-10">
+          <!-- 테마별 그라디언트 배경 -->
+          <div
+            class="h-full w-full bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900"
+          ></div>
+
+          <!-- (선택) 아주 미세한 도트 패턴: 라이트/다크 각각 다른 대비 -->
+          <div
+            class="pointer-events-none absolute inset-0 [background-image:radial-gradient(#0000000d_1px,transparent_1px)] [background-size:16px_16px] dark:[background-image:radial-gradient(#ffffff14_1px,transparent_1px)]"
+          ></div>
+
+          <!-- 상/하단 헤어라인 구분선 -->
+          <div
+            class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gray-300/70 to-transparent dark:via-white/15"
+          ></div>
+          <div
+            class="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-gray-300/70 to-transparent dark:via-white/15"
+          ></div>
+        </div>
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+              사업의 성공을 가져다 주는 개발 컨설팅
+            </h2>
+            <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+              오랜 경험과 체계적 시스템으로 자산 가치를 높이고 운영 효율을
+              극대화합니다.
+            </p>
+          </div>
+
+          <!-- 리디자인된 하이라이트 카드 4종 -->
+          <div class="mt-12 grid gap-6 lg:grid-cols-4">
+            <!-- Card 1 -->
+            <div
+              class="group relative rounded-2xl p-[1px] bg-gradient-to-br from-brand-600/50 via-emerald-500/40 to-brand-600/10 shadow-sm lg:after:absolute lg:after:top-12 lg:after:right-[-32px] lg:after:h-[2px] lg:after:w-8 lg:after:bg-gradient-to-r lg:after:from-brand-600/40 lg:after:to-emerald-500/40 lg:after:content-['']"
+              aria-label="Step 01"
+            >
+              <div
+                class="h-full rounded-2xl bg-white/80 p-6 backdrop-blur transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl dark:bg-white/5"
+              >
+                <!-- 넘버 배지 -->
+                <div class="flex items-center gap-3">
+                  <span
+                    class="relative inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-brand-600 to-emerald-600 text-white text-sm font-bold shadow"
+                    aria-hidden="true"
+                    >01</span
+                  >
+                  <span
+                    class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400"
+                    >기획·분석</span
+                  >
+                </div>
+
+                <h3 class="mt-4 text-lg font-semibold">
+                  토지매입 · 대지조성 · 설계/마케팅
+                </h3>
+                <ul
+                  class="mt-3 space-y-2 text-sm text-gray-700 dark:text-gray-300"
+                >
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500"
+                    ></span
+                    >토지매입·대지조성
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500"
+                    ></span
+                    >기획·설계·마케팅·수지 분석
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="group relative rounded-2xl p-[1px] bg-gradient-to-br from-brand-600/50 via-emerald-500/40 to-brand-600/10 shadow-sm lg:after:absolute lg:after:top-12 lg:after:right-[-32px] lg:after:h-[2px] lg:after:w-8 lg:after:bg-gradient-to-r lg:after:from-brand-600/40 lg:after:to-emerald-500/40 lg:after:content-['']"
+              aria-label="Step 02"
+            >
+              <div
+                class="h-full rounded-2xl bg-white/80 p-6 backdrop-blur transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl dark:bg-white/5"
+              >
+                <div class="flex items-center gap-3">
+                  <span
+                    class="relative inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-brand-600 to-emerald-600 text-white text-sm font-bold shadow"
+                    >02</span
+                  >
+                  <span
+                    class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400"
+                    >운영모델</span
+                  >
+                </div>
+
+                <h3 class="mt-4 text-lg font-semibold">맞춤 운영체계 구축</h3>
+                <ul
+                  class="mt-3 space-y-2 text-sm text-gray-700 dark:text-gray-300"
+                >
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500"
+                    ></span
+                    >자기관리형/위탁관리형
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500"
+                    ></span
+                    >임대인의 NEED에 맞춘 맞춤관리
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500"
+                    ></span
+                    >연체관리 및 인적관리
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500"
+                    ></span
+                    >행정관리 및 세무관리
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="group relative rounded-2xl p-[1px] bg-gradient-to-br from-brand-600/50 via-emerald-500/40 to-brand-600/10 shadow-sm lg:after:absolute lg:after:top-12 lg:after:right-[-32px] lg:after:h-[2px] lg:after:w-8 lg:after:bg-gradient-to-r lg:after:from-brand-600/40 lg:after:to-emerald-500/40 lg:after:content-['']"
+              aria-label="Step 03"
+            >
+              <div
+                class="h-full rounded-2xl bg-white/80 p-6 backdrop-blur transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl dark:bg-white/5"
+              >
+                <div class="flex items-center gap-3">
+                  <span
+                    class="relative inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-brand-600 to-emerald-600 text-white text-sm font-bold shadow"
+                    >03</span
+                  >
+                  <span
+                    class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400"
+                    >수익/자산</span
+                  >
+                </div>
+
+                <h3 class="mt-4 text-lg font-semibold">
+                  수익률·자산가치 고도화
+                </h3>
+                <ul
+                  class="mt-3 space-y-2 text-sm text-gray-700 dark:text-gray-300"
+                >
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500"
+                    ></span
+                    >임대시장 분석 기반 수익률 관리
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500"
+                    ></span
+                    >체계적 시스템 통한 자산가치 증대
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500"
+                    ></span
+                    >자산 운영 관리
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="group relative rounded-2xl p-[1px] bg-gradient-to-br from-brand-600/50 via-emerald-500/40 to-brand-600/10 shadow-sm"
+              aria-label="Step 04"
+            >
+              <div
+                class="h-full rounded-2xl bg-white/80 p-6 backdrop-blur transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl dark:bg-white/5"
+              >
+                <div class="flex items-center gap-3">
+                  <span
+                    class="relative inline-flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-brand-600 to-emerald-600 text-white text-sm font-bold shadow"
+                    >04</span
+                  >
+                  <span
+                    class="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400"
+                    >지원/정착</span
+                  >
+                </div>
+
+                <h3 class="mt-4 text-lg font-semibold">금융·분양·입주 지원</h3>
+                <ul
+                  class="mt-3 space-y-2 text-sm text-gray-700 dark:text-gray-300"
+                >
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500"
+                    ></span
+                    >은행 잔금대출 업무지원
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500"
+                    ></span
+                    >분양권 매매·임대업무 지원
+                  </li>
+                  <li class="flex gap-2">
+                    <span
+                      class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500"
+                    ></span
+                    >입주 사전 점검 서비스
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="winwin" class="py-20 sm:py-24">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+              상호 업무능률향상, 효율적·합리적
+              <span
+                class="bg-gradient-to-r from-brand-600 to-emerald-600 bg-clip-text text-transparent"
+                >Win-Win 전략</span
+              >
+            </h2>
+            <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+              개별 관리의 비효율을 제휴·통합으로 전환하여 운영 효율과 고객
+              가치를 동시에 높입니다.
+            </p>
+          </div>
+
+          <!-- 3-컬럼 비교: 문제 -> 브릿지 -> 해결 -->
+          <div class="mt-12 grid gap-6 lg:grid-cols-3">
+            <!-- 문제(개별관리의 애로요인) -->
+            <div
+              class="rounded-2xl border border-red-200/70 bg-white/70 p-6 shadow-sm backdrop-blur dark:border-red-300/20 dark:bg-white/5"
+            >
+              <h3 class="text-xl font-semibold text-red-600 dark:text-red-400">
+                개별관리 — 애로요인
+              </h3>
+              <ul
+                class="mt-3 space-y-2 text-lg text-gray-700 dark:text-gray-300"
+              >
+                <li class="flex items-start gap-3">
+                  <!-- x 아이콘 -->
+                  <svg
+                    class="mt-0.5 h-4 w-4 text-red-500"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M6.225 4.811a1 1 0 0 1 1.414 0L12 9.172l4.361-4.361a1 1 0 1 1 1.414 1.414L13.414 10.586l4.361 4.361a1 1 0 0 1-1.414 1.414L12 12l-4.361 4.361a1 1 0 1 1-1.414-1.414l4.361-4.361-4.361-4.361a1 1 0 0 1 0-1.414Z"
+                    />
+                  </svg>
+                  각 빌딩별 개별관리로 정보 분산
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="mt-0.5 h-4 w-4 text-red-500"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M6.225 4.811a1 1 0 0 1 1.414 0L12 9.172l4.361-4.361a1 1 0 1 1 1.414 1.414L13.414 10.586l4.361 4.361a1 1 0 0 1-1.414 1.414L12 12l-4.361 4.361a1 1 0 1 1-1.414-1.414l4.361-4.361-4.361-4.361a1 1 0 0 1 0-1.414Z"
+                    />
+                  </svg>
+                  담당자 업무과중 및 커뮤니케이션 지연
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="mt-0.5 h-4 w-4 text-red-500"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M6.225 4.811a1 1 0 0 1 1.414 0L12 9.172l4.361-4.361a1 1 0 1 1 1.414 1.414L13.414 10.586l4.361 4.361a1 1 0 0 1-1.414 1.414L12 12l-4.361 4.361a1 1 0 1 1-1.414-1.414l4.361-4.361-4.361-4.361a1 1 0 0 1 0-1.414Z"
+                    />
+                  </svg>
+                  임대관리의 한계(비전문 영역 대응 난항)
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="mt-0.5 h-4 w-4 text-red-500"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M6.225 4.811a1 1 0 0 1 1.414 0L12 9.172l4.361-4.361a1 1 0 1 1 1.414 1.414L13.414 10.586l4.361 4.361a1 1 0 0 1-1.414 1.414L12 12l-4.361 4.361a1 1 0 1 1-1.414-1.414l4.361-4.361-4.361-4.361a1 1 0 0 1 0-1.414Z"
+                    />
+                  </svg>
+                  온라인 네트워크 미구축(데이터 단절)
+                </li>
+              </ul>
+            </div>
+
+            <!-- 브릿지(Win-Win) -->
+            <div
+              class="relative overflow-hidden rounded-2xl border border-black/5 bg-gradient-to-br from-brand-600 to-emerald-600 p-6 text-white shadow-2xl dark:border-white/10"
+            >
+              <h3 class="text-xl font-semibold">Win-Win 브릿지</h3>
+              <p class="mt-2 text-white/90 text-lg">
+                현장과 본사, 협력사를 하나의 네트워크로 연결하여
+                속도·품질·비용을 동시에 최적화합니다.
+              </p>
+
+              <!-- 교차 원 아이콘 (요청하신 스타일 응용) -->
+              <div class="mt-6 flex justify-center">
+                <svg
+                  viewBox="0 0 320 180"
+                  class="w-56 h-auto"
+                  role="img"
+                  aria-label="상호 협력 시너지를 상징하는 교차 원"
+                >
+                  <defs>
+                    <linearGradient
+                      id="gL"
+                      x1="30"
+                      y1="90"
+                      x2="150"
+                      y2="90"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#84c3ff" />
+                      <stop offset="1" stop-color="#22c55e" />
+                    </linearGradient>
+                    <linearGradient
+                      id="gR"
+                      x1="170"
+                      y1="90"
+                      x2="290"
+                      y2="90"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#a78bfa" />
+                      <stop offset="1" stop-color="#ec4899" />
+                    </linearGradient>
+                    <clipPath id="clipL">
+                      <circle cx="110" cy="90" r="70" />
+                    </clipPath>
+                  </defs>
+                  <!-- 회색 배경 -->
+                  <circle cx="110" cy="90" r="70" fill="#E5E7EB" />
+                  <circle cx="210" cy="90" r="70" fill="#E5E7EB" />
+                  <!-- 교차부: 그린 -->
+                  <circle
+                    cx="210"
+                    cy="90"
+                    r="70"
+                    fill="#22C55E"
+                    clip-path="url(#clipL)"
+                  />
+                  <!-- 그라디언트 테두리 -->
+                  <circle
+                    cx="110"
+                    cy="90"
+                    r="70"
+                    fill="none"
+                    stroke="url(#gL)"
+                    stroke-width="10"
+                    vector-effect="non-scaling-stroke"
+                  />
+                  <circle
+                    cx="210"
+                    cy="90"
+                    r="70"
+                    fill="none"
+                    stroke="url(#gR)"
+                    stroke-width="10"
+                    vector-effect="non-scaling-stroke"
+                  />
+                </svg>
+              </div>
+
+              <!-- 결과 배지 -->
+              <div class="mt-6 flex flex-wrap gap-2">
+                <span
+                  class="rounded-full bg-white/15 px-3 py-1 text-xs font-semibold"
+                  >업무속도 ↑</span
+                >
+                <span
+                  class="rounded-full bg-white/15 px-3 py-1 text-xs font-semibold"
+                  >운영비용 ↓</span
+                >
+                <span
+                  class="rounded-full bg-white/15 px-3 py-1 text-xs font-semibold"
+                  >품질표준화</span
+                >
+                <span
+                  class="rounded-full bg-white/15 px-3 py-1 text-xs font-semibold"
+                  >고객만족 ↑</span
+                >
+              </div>
+            </div>
+
+            <!-- 해결(제휴·통합관리 솔루션) -->
+            <div
+              class="rounded-2xl border border-emerald-200/70 bg-white/70 p-6 shadow-sm backdrop-blur dark:border-emerald-300/20 dark:bg-white/5"
+            >
+              <h3
+                class="text-xl font-semibold text-emerald-600 dark:text-emerald-400"
+              >
+                제휴·통합관리 솔루션
+              </h3>
+              <ul
+                class="mt-3 space-y-2 text-lg text-gray-700 dark:text-gray-300"
+              >
+                <li class="flex items-start gap-3">
+                  <!-- check 아이콘 -->
+                  <svg
+                    class="mt-0.5 h-4 w-4 text-emerald-500"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M20.285 6.708a1 1 0 0 1 .007 1.414l-9.19 9.307a1 1 0 0 1-1.435.01L3.7 12.383a1 1 0 1 1 1.414-1.414l5 5 8.484-8.598a1 1 0 0 1 1.686.337Z"
+                    />
+                  </svg>
+                  전문업체 제휴 및 전국 네트워크 통합관리
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="mt-0.5 h-4 w-4 text-emerald-500"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M20.285 6.708a1 1 0 0 1 .007 1.414l-9.19 9.307a1 1 0 0 1-1.435.01L3.7 12.383a1 1 0 1 1 1.414-1.414l5 5 8.484-8.598a1 1 0 0 1 1.686.337Z"
+                    />
+                  </svg>
+                  자체 관리·영업 조직망 완비
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    class="mt-0.5 h-4 w-4 text-emerald-500"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M20.285 6.708a1 1 0 0 1 .007 1.414l-9.19 9.307a1 1 0 0 1-1.435.01L3.7 12.383a1 1 0 1 1 1.414-1.414l5 5 8.484-8.598a1 1 0 0 1 1.686.337Z"
+                    />
+                  </svg>
+                  온라인 전산시스템 개발·운용
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 성과/효과 지표 
+          <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div
+              class="rounded-2xl border border-gray-200/80 bg-white/70 p-4 text-center dark:border-white/10 dark:bg-white/5"
+            >
+              <div class="text-2xl font-bold text-gray-900 dark:text-white">
+                -20%
+              </div>
+              <div class="mt-1 text-xs text-gray-500">운영비 절감</div>
+            </div>
+            <div
+              class="rounded-2xl border border-gray-200/80 bg-white/70 p-4 text-center dark:border-white/10 dark:bg-white/5"
+            >
+              <div class="text-2xl font-bold text-gray-900 dark:text-white">
+                +35%
+              </div>
+              <div class="mt-1 text-xs text-gray-500">이슈 처리 속도</div>
+            </div>
+            <div
+              class="rounded-2xl border border-gray-200/80 bg-white/70 p-4 text-center dark:border-white/10 dark:bg-white/5"
+            >
+              <div class="text-2xl font-bold text-gray-900 dark:text-white">
+                99.9%
+              </div>
+              <div class="mt-1 text-xs text-gray-500">데이터 가용성</div>
+            </div>
+            <div
+              class="rounded-2xl border border-gray-200/80 bg-white/70 p-4 text-center dark:border-white/10 dark:bg-white/5"
+            >
+              <div class="text-2xl font-bold text-gray-900 dark:text-white">
+                ↑
+              </div>
+              <div class="mt-1 text-xs text-gray-500">고객 만족도</div>
+            </div>
+          </div>-->
+        </div>
+      </section>
+
+      <!-- 협력업체 : 텍스트 로고월 + 라이트/다크 적응형 배경 -->
+      <section
+        id="partners"
+        class="relative py-20 sm:py-24 text-gray-900 dark:text-gray-100"
+        aria-labelledby="partnersTitle"
+      >
+        <!-- 섹션 배경 레이어 (라이트/다크 대응) -->
+        <div aria-hidden="true" class="absolute inset-0 -z-10">
+          <!-- 테마별 그라디언트 배경 -->
+          <div
+            class="h-full w-full bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900"
+          ></div>
+
+          <!-- (선택) 아주 미세한 도트 패턴: 라이트/다크 각각 다른 대비 -->
+          <div
+            class="pointer-events-none absolute inset-0 [background-image:radial-gradient(#0000000d_1px,transparent_1px)] [background-size:16px_16px] dark:[background-image:radial-gradient(#ffffff14_1px,transparent_1px)]"
+          ></div>
+
+          <!-- 상/하단 헤어라인 구분선 -->
+          <div
+            class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gray-300/70 to-transparent dark:via-white/15"
+          ></div>
+          <div
+            class="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-gray-300/70 to-transparent dark:via-white/15"
+          ></div>
+        </div>
+
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="text-center">
+            <h2
+              id="partnersTitle"
+              class="text-3xl font-bold tracking-tight sm:text-4xl"
+            >
+              에스텍피엠씨와 함께한 기업
+            </h2>
+            <p class="mt-4 text-lg sm:text-lg text-gray-700 dark:text-gray-300">
+              더욱더 신뢰받는 회사로 발전시켜 나가겠습니다.
+            </p>
+          </div>
+
+          <!-- 텍스트 로고 그리드 (반응형 2 → 3 → 5열) -->
+          <ul
+            class="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 place-items-center gap-x-6 gap-y-10 sm:gap-y-12"
+            role="list"
+            aria-label="협력업체 목록"
+          >
+            <!-- 금융/신탁 -->
+            <li class="text-2xl sm:text-3xl font-semibold tracking-tight">
+              우리은행
+            </li>
+            <li class="text-2xl sm:text-3xl font-semibold tracking-tight">
+              신한은행
+            </li>
+            <li class="text-2xl sm:text-3xl font-semibold tracking-tight">
+              하나은행
+            </li>
+            <li class="text-2xl sm:text-3xl font-semibold tracking-tight">
+              농협
+            </li>
+
+            <!-- 건축설계 -->
+            <li class="text-2xl sm:text-3xl font-semibold tracking-tight">
+              도일건축설계
+            </li>
+            <li class="text-2xl sm:text-3xl font-semibold tracking-tight">
+              아키원건축사무소
+            </li>
+
+            <!-- 신탁 -->
+            <li class="text-2xl sm:text-3xl font-semibold tracking-tight">
+              한국자산신탁
+            </li>
+            <li class="text-2xl sm:text-3xl font-semibold tracking-tight">
+              하나자산신탁
+            </li>
+
+            <!-- 보증보험 -->
+            <li class="text-2xl sm:text-3xl font-semibold tracking-tight">
+              주택도시보증공사
+            </li>
+            <li class="text-2xl sm:text-3xl font-semibold tracking-tight">
+              서울보증보험
+            </li>
+
+            <!-- 기타 -->
+            <li class="text-2xl sm:text-3xl font-semibold tracking-tight">
+              (주) 오성플래닝
+            </li>
+            <li class="text-2xl sm:text-3xl font-semibold tracking-tight">
+              (주) 태한디앤씨
+            </li>
+            <li class="text-2xl sm:text-3xl font-semibold tracking-tight">
+              (주) 제이플래닝
+            </li>
+            <li class="text-2xl sm:text-3xl font-semibold tracking-tight">
+              (주) 금화디앤씨
+            </li>
+            <li class="text-2xl sm:text-3xl font-semibold tracking-tight">
+              (주) 아이씨디유닛
+            </li>
+            <li class="text-2xl sm:text-3xl font-semibold tracking-tight">
+              (주) 한일파트너스
+            </li>
+            <li class="text-2xl sm:text-3xl font-semibold tracking-tight">
+              (주) 한라건설
+            </li>
+            <li class="text-2xl sm:text-3xl font-semibold tracking-tight">
+              (주)네스트종합건설
+            </li>
+            <li class="text-2xl sm:text-3xl font-semibold tracking-tight">
+              (주) 더블유건설
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 사업영역 -->
+      <section
+        id="areas"
+        class="relative py-20 sm:py-24 text-gray-900 dark:text-gray-100"
+        aria-labelledby="partnersTitle"
+      >
+
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center">
+            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+              사업영역
+            </h2>
+            <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+              임대관리, 자산관리, 운영효과, 활동, 건물경영관리, 생활형
+              숙박시설까지 전 영역을 아우릅니다.
+            </p>
+          </div>
+
+          <!-- 부동산 임대관리 -->
+          <div class="mt-12 grid gap-6 lg:grid-cols-2">
+            <div
+              class="rounded-2xl border border-gray-200/80 bg-white/70 p-6 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5"
+            >
+              <h3 class="text-xl font-semibold">부동산 임대관리</h3>
+              <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">
+                임대관리 프로그램을 통한 임차인 관리 / 임대료 관리 / 공실관리 /
+                법률, 세무, 회계관리
+              </p>
+              <ul
+                class="mt-3 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300"
+              >
+                <li>임대계약관리 및 임대수입관리</li>
+                <li>임차인 모집·관리, 건물·시설 유지</li>
+                <li>
+                  임대차 물건의 수요 가치에 따른 권리분석, 계약체결 및 입주관련
+                  업무
+                </li>
+                <li>임대료 수납 / 관리비 부과 및 징수 / 공과금 납부</li>
+                <li>보증금 회수 및 명도 (당사 법무팀 및 고문 법률사무소)</li>
+                <li>
+                  공실관리, 건물 하자보수 대행, 전기/냉난방/배관 설비 관리
+                </li>
+                <li>임대사업과 관련된 법률 세무 회계등 행정업무 지원</li>
+              </ul>
+            </div>
+            <!-- 자산관리 -->
+            <div
+              class="rounded-2xl border border-gray-200/80 bg-white/70 p-6 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5"
+            >
+              <h3 class="text-xl font-semibold">부동산 자산관리 서비스</h3>
+              <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">
+                부동산의 임대·재정·수익을 체계적으로 관리하여 소유자와 입주자
+                모두에게 최고의 가치와 만족을 제공하는 자산관리 서비스
+              </p>
+              <ul
+                class="mt-3 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300"
+              >
+                <li>임대차 관리: 계약 체결, 갱신, 해지 및 조건 관리</li>
+                <li>임차인 스케줄 관리: 입·퇴거 일정, 납부 일정, 알림 관리</li>
+                <li>
+                  수익성 관리: 임대수익 분석, 비용 절감 및 수익 극대화 전략
+                </li>
+                <li>재정 관리: 운영비·세금·유지보수 비용 계획 및 정산</li>
+                <li>보증금 회수 및 명도 (당사 법무팀 및 고문 법률사무소)</li>
+                <li>
+                  매수·처분 관리: 매입 및 매각 전략 수립, 시장 분석 및 실행
+                </li>
+              </ul>
+            </div>
+            <!-- 임대관리 효과 -->
+            <div
+              class="rounded-2xl border border-gray-200/80 bg-white/70 p-6 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5"
+            >
+              <h3 class="text-xl font-semibold">임대관리 효과</h3>
+              <ul
+                class="mt-3 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300"
+              >
+                <li>임대 수익률 증대, 공실율 감소</li>
+                <li>사용가치 극대화, 임차인 만족도 증가</li>
+                <li>부동산 가치 증가</li>
+              </ul>
+            </div>
+            <!-- 관리 운영의 효과 -->
+            <div
+              class="rounded-2xl border border-gray-200/80 bg-white/70 p-6 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5"
+            >
+              <h3 class="text-xl font-semibold">관리 운영의 효과</h3>
+              <p class="mt-2 text-sm text-gray-700 dark:text-gray-300">
+                투자수익·사용가치의 극대화
+              </p>
+              <ul
+                class="mt-3 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300"
+              >
+                <li>임대관리 통합시스템(글로벌 네트워크)</li>
+                <li>중앙집중 임대차 관리, 전문가 컨설팅</li>
+                <li>지역/건물 특성 기반 VIP 임차인 유치</li>
+              </ul>
+            </div>
+            <!-- 임대관리활동 -->
+            <div
+              class="rounded-2xl border border-gray-200/80 bg-white/70 p-6 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5"
+            >
+              <h3 class="text-xl font-semibold">임대관리 활동</h3>
+              <ul
+                class="mt-3 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300"
+              >
+                <li>최유효 사용 실현, 시장 지속 분석</li>
+                <li>임차인 스케줄·TARGET 시장 관리</li>
+                <li>잠재 임차인 관리</li>
+              </ul>
+            </div>
+            <!-- 건물경영관리 -->
+            <div
+              class="rounded-2xl border border-gray-200/80 bg-white/70 p-6 shadow-sm backdrop-blur dark:border-white/10 dark:bg-white/5"
+            >
+              <h3 class="text-xl font-semibold">
+                건물경영관리 (Maintenance & Operation)
+              </h3>
+              <ul
+                class="mt-3 list-disc pl-5 text-sm text-gray-700 dark:text-gray-300"
+              >
+                <li>임대물건·양차인 스케줄, 임대료·연체 관리</li>
+                <li>수익성·공실률·세무 관리, 홍보/마케팅, Leasing Package</li>
+                <li>임대물건, 고객별 통합 보고서, 상권 분석·수익성 컨설팅</li>
+                <li>
+                  분양·임대·임차 시행, 신규 임대 유지 및 우량 입주자 이탈 방지,
+                  미수금/연체 관리
+                </li>
+                <li>세금계산서·세무신고, 운영예산 작성</li>
+              </ul>
+            </div>
+          </div>
+      </section>
+
+      <!-- 주요 실적 섹션 -->
+      <section
+        id="projects"
+        class="relative py-20 sm:py-24"
+        aria-labelledby="projectsTitle"
+        aria-describedby="projectsDesc"
+      >
+        <!-- 섹션 배경 레이어 (라이트/다크 대응) -->
+        <div aria-hidden="true" class="absolute inset-0 -z-10">
+          <!-- 테마별 그라디언트 배경 -->
+          <div
+            class="h-full w-full bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900"
+          ></div>
+
+          <!-- (선택) 아주 미세한 도트 패턴: 라이트/다크 각각 다른 대비 -->
+          <div
+            class="pointer-events-none absolute inset-0 [background-image:radial-gradient(#0000000d_1px,transparent_1px)] [background-size:16px_16px] dark:[background-image:radial-gradient(#ffffff14_1px,transparent_1px)]"
+          ></div>
+
+          <!-- 상/하단 헤어라인 구분선 -->
+          <div
+            class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gray-300/70 to-transparent dark:via-white/15"
+          ></div>
+          <div
+            class="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-gray-300/70 to-transparent dark:via-white/15"
+          ></div>
+        </div>
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <!-- 헤더 -->
+          <div class="mx-auto max-w-3xl text-center">
+            <h2
+              id="projectsTitle"
+              class="text-3xl font-bold tracking-tight sm:text-4xl"
+            >
+              주요 실적
+            </h2>
+            <p
+              id="projectsDesc"
+              class="mt-4 text-lg text-gray-600 dark:text-gray-300"
+            >
+              (주) 에스텍피엠씨는 고객자산의 극대화를 위해 끈임없이 노력하고
+              있습니다.
+            </p>
+          </div>
+
+          <!-- 프로젝트 목록 (강조 타일형) -->
+          <ul
+            class="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+            role="list"
+            aria-label="주요 실적 목록"
+          >
+            <!-- 한 줄 하나의 타일: 좌측 그라디언트 포인트 + 큰 타이포 -->
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                한라 웨스턴파크 송도
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                웰스하임
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                리더스타워
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                도시에창
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                주안웰가
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                디에이리베로
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                명주아르디에
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                월드빌
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                드림시티
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                더원시티
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                알바트로스
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                헤리티지
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                프라움시티
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                신한데뷰
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                아트뷰
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                아델라이
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                아카데이텔
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                대명어반스테이
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                청진네오스빌
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                에비뉴시티
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                에비뉴큐브시티
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                트리풀규브
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                마스터규브
+              </h3>
+            </li>
+            <li
+              class="group relative overflow-hidden rounded-2xl border border-gray-200/80 bg-white/70 p-5 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
+            >
+              <span
+                class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-brand-600 to-emerald-600"
+              ></span>
+              <h3 class="text-lg sm:text-xl font-semibold tracking-tight">
+                센트럴파크 그랑베르
+              </h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+
+
+      <!-- 호텔영업 및 대규모 행사 전문업체 (주) 늘푸른 E&T — 풀블리드 배경 이미지 섹션 -->
+      <section id="neulpureun-et" class="relative py-0" aria-labelledby="neulpureunTitle">
+        <!-- 풀브라우저 너비 배경 스트립: 높이 고정, 이미지 블러 + 투명도 처리 -->
+        <div class="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[520px] sm:h-[560px] lg:h-[600px]">
+          <!-- 배경 이미지 (decorative) -->
+          <div aria-hidden="true"
+              class="absolute inset-0 bg-center bg-cover blur-[2px] opacity-70"
+              style="background-image:url('./assets/8.webp');">
+          </div>
+          <!-- 가독성 향상 오버레이 -->
+          <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"></div>
+
+          <!-- 텍스트 오버레이 -->
+          <div class="relative z-10 mx-auto flex h-full max-w-7xl items-center px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl text-white">
+              <h2 id="neulpureunTitle" class="text-3xl sm:text-4xl font-bold tracking-tight">
+                호텔영업 및 대규모 행사 전문업체 (주) 늘푸른 E&amp;T
+              </h2>
+              <p class="mt-4 text-white/90">
+                16년간의 신뢰와 경험을 바탕으로 고객에게 만족도가 높은 여행·행사 서비스를 제공합니다.
+              </p>
+              <p class="mt-2 text-white/90">
+                11년 연속 한화 호텔 &amp; 리조트 공식 판매 대행사로, 전국 호텔/리조트의 단체 행사와 해외 여행까지
+                늘푸른 E&amp;T만의 시스템으로 최고의 결과를 만들어 드립니다.
+              </p>
+
+              <!-- 하이라이트 리스트 -->
+              <ul class="mt-6 grid gap-2 text-sm sm:text-base sm:grid-cols-2" role="list" aria-label="주요 대행·진행 분야">
+                <li class="flex items-start gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                  전국 한화 호텔 &amp; 리조트 (공식)
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                  평창 알펜시아(인터컨티넨탈·홀리데이 인 리조트·홀리데이 인&amp;스위트)
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                  백학 자유로 리조트(자유로CC)
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                  부산 해운대 센텀프리미어 호텔
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                  통영 동원 로열 컨트리 클럽
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                  제주 와이 리조트 · 양평 헬스투어
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                  기업·종교 단체 워크샵 · 대학교 OT·MT
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                  취·창업 캠프 및 대규모 행사 운영
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- 생활형 숙박시설 운영관리 (풀블리드 배경이미지 + 유형별 설명) -->
+      <section
+        id="lodging-ops"
+        class="relative py-20 sm:py-24"
+        aria-labelledby="lodgingOpsTitle"
+      >
+        <!-- 섹션 타이틀 -->
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2
+            id="lodgingOpsTitle"
+            class="text-3xl font-bold tracking-tight sm:text-4xl"
+          >
+            생활형 숙박시설 운영관리
+          </h2>
+          <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+            20여년간 장기숙박 (부동산단기임대) 운영으로 축적된 에스텍피엠씨만의
+            차별화된 마케팅과 국내외 예약채널 및국내최고의 호텔영업 및 대규모
+            행사 전문업체인 (주)늘푸른 E&T 와의 업무협약을 통해 높은 예약률로
+            관리합니다.
+          </p>
+          <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+            부동산 종합관리 회사인 에스텍피엠씨는 위탁운영만이 아닌 건물의
+            가치증대를 통해 매매까지 함께 합니다.
+          </p>
+        </div>
+
+        <!-- 유형 1: 확정 위탁형 (타이틀 컨테이너 폭과 동일) -->
+        <div class="mx-auto mt-10 max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="overflow-hidden rounded-2xl">
+            <div class="grid grid-cols-2">
+              <!-- 각 칸은 배경이미지: 높이 고정, 가로는 반응형 -->
+              <div
+                class="h-48 sm:h-64 md:h-72 lg:h-80 bg-center bg-cover"
+                style="background-image: url('./assets/4.webp')"
+                role="img"
+                aria-label="호텔 로비 전경 (확정 위탁형)"
+              ></div>
+              <div
+                class="h-48 sm:h-64 md:h-72 lg:h-80 bg-center bg-cover"
+                style="background-image: url('./assets/5.webp')"
+                role="img"
+                aria-label="객실 인테리어 (확정 위탁형)"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 유형 1 설명 -->
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mt-6 text-center">
+            <h3 class="text-2xl font-semibold">확정 위탁형</h3>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              에스텍피엠씨와의 확정위탁 계약을 체결한다.
+            </p>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              계약조건에 맞게 공실유무와 상관없이 임대료 지급.
+            </p>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              에스텍피엠씨의 차별화된 마케팅으로 높은 예약율 관리.
+            </p>
+          </div>
+        </div>
+
+        <!-- 유형 2: 기본 위탁형 -->
+        <div class="mx-auto mt-10 max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="overflow-hidden rounded-2xl">
+          <div class="grid grid-cols-2">
+            <div
+              class="h-48 sm:h-64 md:h-72 lg:h-80 bg-center bg-cover"
+              style="background-image: url('./assets/6.webp')"
+              role="img"
+              aria-label="프런트 데스크 (기본 위탁형)"
+            ></div>
+            <div
+              class="h-48 sm:h-64 md:h-72 lg:h-80 bg-center bg-cover"
+              style="background-image: url('./assets/7.webp')"
+              role="img"
+              aria-label="라운지 공간 (기본 위탁형)"
+            ></div>
+          </div>
+          </div>
+        </div>
+        
+        <!-- 유형 2 설명 -->
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mt-6 text-center">
+            <h3 class="text-2xl font-semibold">기본 위탁형</h3>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              기본위탁관리 계약서 체결.
+            </p>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              차별화된 마케팅으로 빠른 공실해결
+            </p>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              번거로운 민원 처리 해결
+            </p>
+          </div>
+        </div>
+      </section>      
+
+
+      <!-- 종합관리 (풀블리드 배경이미지 + 유형별 설명) -->
+      <section
+        id="total-ops"
+        class="relative py-20 sm:py-24"
+        aria-labelledby="totalOpsTitle"
+      >
+        <!-- 섹션 배경 레이어 (라이트/다크 대응) -->
+        <div aria-hidden="true" class="absolute inset-0 -z-10">
+          <!-- 테마별 그라디언트 배경 -->
+          <div
+            class="h-full w-full bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900"
+          ></div>
+
+          <!-- (선택) 아주 미세한 도트 패턴: 라이트/다크 각각 다른 대비 -->
+          <div
+            class="pointer-events-none absolute inset-0 [background-image:radial-gradient(#0000000d_1px,transparent_1px)] [background-size:16px_16px] dark:[background-image:radial-gradient(#ffffff14_1px,transparent_1px)]"
+          ></div>
+
+          <!-- 상/하단 헤어라인 구분선 -->
+          <div
+            class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gray-300/70 to-transparent dark:via-white/15"
+          ></div>
+          <div
+            class="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-gray-300/70 to-transparent dark:via-white/15"
+          ></div>
+        </div>
+        <!-- 섹션 타이틀 -->
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2
+            id="totalOpsTitle"
+            class="text-3xl font-bold tracking-tight sm:text-4xl"
+          >
+            종합관리
+          </h2>
+          <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+            합리적이고 효율적인 건물 운영방안과 최고의 서비스를 제공합니다.
+          </p>
+        </div>
+
+        <!-- 유형 1: 종합관리란-->
+        <div class="mx-auto mt-10 max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="overflow-hidden rounded-2xl">
+            <div class="grid grid-cols-2">
+              <!-- 각 칸은 배경이미지: 높이 고정, 가로는 반응형 -->
+              <div
+                class="h-48 sm:h-64 md:h-72 lg:h-80 bg-center bg-cover"
+                style="background-image: url('./assets/9.webp')"
+                role="img"
+                aria-label="회의실 전경 (종합관리란)"
+              ></div>
+              <div
+                class="h-48 sm:h-64 md:h-72 lg:h-80 bg-center bg-cover"
+                style="background-image: url('./assets/10.webp')"
+                role="img"
+                aria-label="회의 전경 (종합관리란)"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 유형 1 설명 -->
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mt-6 text-center">
+            <h3 class="text-2xl font-semibold">종합관리란?</h3>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              시설물의 내구성을 늘려 운영기간을 늘려 주는 관리점검
+            </p>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              냉난방, 전기, 영선, 소방, 위생설비등 건물의 필수시설점검
+            </p>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              고객님들이 안정적으로 시설을 이용 할 수 있도록 시스템구축
+            </p>
+          </div>
+        </div>
+
+        <!-- 유형 2: 종합관리 서비스의 특장점 -->
+        <div class="mx-auto mt-10 max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="overflow-hidden rounded-2xl">
+            <div class="grid grid-cols-2">
+              <!-- 각 칸은 배경이미지: 높이 고정, 가로는 반응형 -->
+              <div
+                class="h-48 sm:h-64 md:h-72 lg:h-80 bg-center bg-cover"
+                style="background-image: url('./assets/11.webp')"
+                role="img"
+                aria-label="프런트 데스크 (기본 위탁형)"
+              ></div>
+              <div
+                class="h-48 sm:h-64 md:h-72 lg:h-80 bg-center bg-cover"
+                style="background-image: url('./assets/12.webp')"
+                role="img"
+                aria-label="라운지 공간 (기본 위탁형)"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- 유형 2 설명 -->
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mt-6 text-center">
+            <h3 class="text-2xl font-semibold">종합관리 서비스의 특장점</h3>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              해당 전문자격증을 갖춘 전문인력에 의한 시설점검 및 보수
+            </p>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              보일러 , 냉동기 , 냉온수기 운전 및 설비유지관리 , 진단예측과 감시
+            </p>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              변전실 특고압설비 제어 및 유지관리 , 배전반 , 분전반점검관리
+            </p>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              급배수 시설관리 및 열교환기 등의 지역난방운전
+            </p>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              공조설비 운전 및 부대설비 유지관리
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- 미화관리 (풀블리드 배경이미지 + 유형별 설명) -->
+      <section
+        id="cleaning-ops"
+        class="relative py-20 sm:py-24"
+        aria-labelledby="lodgingCleaningTitle"
+      >
+        <!-- 섹션 타이틀 -->
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2
+            id="lodgingCleaningTitle"
+            class="text-3xl font-bold tracking-tight sm:text-4xl"
+          >
+            미화관리
+          </h2>
+          <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+            쾌적하고 위생적인 환경을 조성합니다.
+          </p>
+        </div>
+
+        <!-- 유형 1: 미화관리란? -->
+        <div class="mx-auto mt-10 max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="overflow-hidden rounded-2xl">
+            <div class="grid grid-cols-2">
+              <!-- 각 칸은 배경이미지: 높이 고정, 가로는 반응형 -->
+              <div
+                class="h-48 sm:h-64 md:h-72 lg:h-80 bg-center bg-cover"
+                style="background-image: url('./assets/13.webp')"
+                role="img"
+                aria-label="수건 (미화관리란)"
+              ></div>
+              <div
+                class="h-48 sm:h-64 md:h-72 lg:h-80 bg-center bg-cover"
+                style="background-image: url('./assets/14.webp')"
+                role="img"
+                aria-label="와인잔 (미화관리란)"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- 유형 1 설명 -->
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mt-6 text-center">
+            <h3 class="text-2xl font-semibold">미화관리란?</h3>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              심미적, 위생적으로 이용객들이 만족하는 시설만들기
+            </p>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              최첨단 미화장비의 이용으로 체계적인 위생관리 가능
+            </p>
+          </div>
+        </div>
+
+        <!-- 유형 2: 미화관리 서비스의 특장점 -->
+        <div class="mx-auto mt-10 max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="overflow-hidden rounded-2xl">
+            <div class="grid grid-cols-2">
+              <!-- 각 칸은 배경이미지: 높이 고정, 가로는 반응형 -->
+              <div
+                class="h-48 sm:h-64 md:h-72 lg:h-80 bg-center bg-cover"
+                style="background-image: url('./assets/15.webp')"
+                role="img"
+                aria-label="수건 (미화관리 서비스의 특장점)"
+              ></div>
+              <div
+                class="h-48 sm:h-64 md:h-72 lg:h-80 bg-center bg-cover"
+                style="background-image: url('./assets/16.webp')"
+                role="img"
+                aria-label="와인잔 (미화관리 서비스의 특장점)"
+              ></div>
+            </div>
+          </div>
+        </div> 
+        <!-- 유형 2 설명 -->
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mt-6 text-center">
+            <h3 class="text-2xl font-semibold">미화관리 서비스의 특장점</h3>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              해당 전문 자격증을 갖춘 전문 인력에 의한 미화관리
+            </p>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              계획적인 청소 실시로 입주 당시의 쾌적성을 오래도록 유지
+            </p>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              기계화된 최첨단 청소장비
+            </p>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              미화 관련 민원 대폭 줄임
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <!-- 시설점검 (풀블리드 배경이미지 + 유형별 설명) -->
+      <section
+        id="facilities-ops"
+        class="relative py-20 sm:py-24"
+        aria-labelledby="facilitiesOpsTitle"
+      >
+        <!-- 섹션 배경 레이어 (라이트/다크 대응) -->
+        <div aria-hidden="true" class="absolute inset-0 -z-10">
+          <!-- 테마별 그라디언트 배경 -->
+          <div
+            class="h-full w-full bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900"
+          ></div>
+
+          <!-- (선택) 아주 미세한 도트 패턴: 라이트/다크 각각 다른 대비 -->
+          <div
+            class="pointer-events-none absolute inset-0 [background-image:radial-gradient(#0000000d_1px,transparent_1px)] [background-size:16px_16px] dark:[background-image:radial-gradient(#ffffff14_1px,transparent_1px)]"
+          ></div>
+
+          <!-- 상/하단 헤어라인 구분선 -->
+          <div
+            class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gray-300/70 to-transparent dark:via-white/15"
+          ></div>
+          <div
+            class="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-gray-300/70 to-transparent dark:via-white/15"
+          ></div>
+        </div>
+        <!-- 섹션 타이틀 -->
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2
+            id="facilitiesOpsTitle"
+            class="text-3xl font-bold tracking-tight sm:text-4xl"
+          >
+            시설점검
+          </h2>
+          <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+            전문가들의 꼼꼼하고 섬세한 정밀점검이 이루어집니다.
+          </p>
+        </div>
+
+        <!-- 유형 1: 시설점검이란? -->
+        <div class="mx-auto mt-10 max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="overflow-hidden rounded-2xl">
+            <div class="grid grid-cols-2">
+              <!-- 각 칸은 배경이미지: 높이 고정, 가로는 반응형 -->
+              <div
+                class="h-48 sm:h-64 md:h-72 lg:h-80 bg-center bg-cover"
+                style="background-image: url('./assets/17.webp')"
+                role="img"
+                aria-label="베게 (시설점검이란)"
+              ></div>
+              <div
+                class="h-48 sm:h-64 md:h-72 lg:h-80 bg-center bg-cover"
+                style="background-image: url('./assets/18.webp')"
+                role="img"
+                aria-label="침실 (시설점검이란)"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <!-- 유형 1 설명 -->
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mt-6 text-center">
+            <h3 class="text-2xl font-semibold">시설점검이란?</h3>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              정기적으로 시설의 정밀점검 및 보고서 작성
+            </p>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              직원 채용에 대한 관리 비용 상승 억제
+            </p>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              관리비의 대폭 절감
+            </p>
+          </div>
+        </div>
+
+        <!-- 유형 2: 시설점검 서비스의 특장점 -->
+        <div class="mx-auto mt-10 max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="overflow-hidden rounded-2xl">
+            <div class="grid grid-cols-2">
+              <!-- 각 칸은 배경이미지: 높이 고정, 가로는 반응형 -->
+              <div
+                class="h-48 sm:h-64 md:h-72 lg:h-80 bg-center bg-cover"
+                style="background-image: url('./assets/19.webp')"
+                role="img"
+                aria-label="침실 (시설점검 서비스의 특장점)"
+              ></div>
+              <div
+                class="h-48 sm:h-64 md:h-72 lg:h-80 bg-center bg-cover"
+                style="background-image: url('./assets/20.webp')"
+                role="img"
+                aria-label="침실 (시설점검 서비스의 특장점)"
+              ></div>
+            </div>
+          </div>
+        </div> 
+        <!-- 유형 2 설명 -->
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="mt-6 text-center">
+            <h3 class="text-2xl font-semibold">시설점검 서비스의 특장점</h3>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              해당 전문 자격증을 갖춘 전문 인력에 의한 시설점검
+            </p>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              전기 관리 시설물 점검 및 정기교체
+            </p>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              노후시설물의 관리
+            </p>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">
+              화장실, 배관, 수도 관련 점검 및 교체
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer
+      class="border-t border-gray-200/80 py-10 text-sm text-gray-600 dark:border-white/10 dark:text-gray-400"
+    >
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col items-center justify-between gap-6 md:flex-row"
+        >
+          <p>
+            © <span id="year"></span> (주) 에스텍피엠씨. All rights reserved.
+          </p>
+          <!-- <nav class="flex gap-6" aria-label="푸터 메뉴">
+            <a href="#" class="hover:text-gray-900 dark:hover:text-white"
+              >이용약관</a
+            >
+            <a href="#" class="hover:text-gray-900 dark:hover:text-white"
+              >개인정보처리방침</a
+            >
+            <a href="#contact" class="hover:text-gray-900 dark:hover:text-white"
+              >문의</a
+            >
+          </nav> -->
+        </div>
+      </div>
+    </footer>
+
+    <!-- 상단으로 -->
+    <a
+      href="#"
+      class="fixed bottom-5 right-5 inline-flex items-center justify-center rounded-full border border-gray-300/70 bg-white/80 p-3 shadow backdrop-blur hover:bg-white dark:border-white/15 dark:bg-gray-900/70"
+      aria-label="맨 위로 이동"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1.5"
+          d="M5 15l7-7 7 7"
+        />
+      </svg>
+    </a>
+
+    <!-- 스크립트: 헤더 스크롤 효과, 모바일 메뉴, 다크모드 -->
+    <script>
+      const header = document.getElementById("siteHeader");
+      const mobileBtn = document.getElementById("mobileBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const yearEl = document.getElementById("year");
+      const themeToggle = document.getElementById("themeToggle");
+      const themeToggleMobile = document.getElementById("themeToggleMobile");
+
+      // 현재 연도
+      yearEl.textContent = new Date().getFullYear();
+
+      // 헤더 스타일: 스크롤 시 유리효과 + 그림자
+      const updateHeader = () => {
+        const scrolled = window.scrollY > 10;
+        header.classList.toggle("backdrop-blur", scrolled);
+        header.classList.toggle("bg-white/85", scrolled);
+        header.classList.toggle("shadow-sm", scrolled);
+        header.classList.toggle("border-b", scrolled);
+        header.classList.toggle("border-gray-200/80", scrolled);
+        header.classList.toggle("dark:bg-gray-950/70", scrolled);
+        header.classList.toggle("dark:border-white/10", scrolled);
+      };
+      updateHeader();
+      window.addEventListener("scroll", updateHeader, { passive: true });
+
+      // 모바일 메뉴 토글
+      mobileBtn.addEventListener("click", () => {
+        const expanded = mobileBtn.getAttribute("aria-expanded") === "true";
+        mobileBtn.setAttribute("aria-expanded", String(!expanded));
+        mobileMenu.classList.toggle("hidden");
+      });
+      mobileMenu.addEventListener("click", (e) => {
+        if (e.target.tagName === "A") {
+          mobileMenu.classList.add("hidden");
+          mobileBtn.setAttribute("aria-expanded", "false");
+        }
+      });
+
+      // 다크모드 토글 (로컬 저장)
+      const htmlEl = document.documentElement;
+      const setTheme = (isDark) => {
+        if (isDark) {
+          htmlEl.classList.add("dark");
+        } else {
+          htmlEl.classList.remove("dark");
+        }
+        // 저장
+        try {
+          localStorage.setItem("theme", isDark ? "dark" : "light");
+        } catch (e) {}
+
+        // 접근성 상태
+        if (themeToggle)
+          themeToggle.setAttribute("aria-pressed", String(isDark));
+        if (themeToggleMobile)
+          themeToggleMobile.setAttribute("aria-pressed", String(isDark));
+
+        // 버튼 라벨 & 아이콘
+        const label = isDark ? "" : "";
+        const sun =
+          '<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.536-7.536-1.414 1.414M7.879 16.121l-1.414 1.414m12.99-1.414-1.414-1.414M7.879 7.879 6.465 6.465"/></svg>';
+        const moon =
+          '<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+        const html =
+          (isDark ? sun : moon) + ' <span></span>' ;
+        if (themeToggle) {
+          themeToggle.innerHTML = html;
+          themeToggle.setAttribute("aria-label", label + "로 변경");
+        }
+        if (themeToggleMobile) {
+          themeToggleMobile.innerHTML = html;
+          themeToggleMobile.setAttribute("aria-label", label + "로 변경");
+        }
+
+        // 브라우저 UI 색상 (모바일 주소창 등)
+        const meta = document.getElementById("metaThemeColor");
+        if (meta) meta.setAttribute("content", isDark ? "#111827" : "#0b6ff2");
+      };
+      const savedTheme = localStorage.getItem("theme");
+      setTheme(
+        savedTheme
+          ? savedTheme === "dark"
+          : window.matchMedia("(prefers-color-scheme: dark)").matches
+      );
+      [themeToggle, themeToggleMobile].forEach(
+        (btn) =>
+          btn &&
+          btn.addEventListener("click", () =>
+            setTheme(!htmlEl.classList.contains("dark"))
+          )
+      );
+    </script>
+  </body>
+</html>
